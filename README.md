@@ -5,6 +5,7 @@ A tiny smart bot to reply my new messages in the telegram.
 ### Startup
 
 ```
+$ sudo chmod +x cli.sh
 $ npm install pm2@latest -g
 $ pm2 start --name 'Max Bot' '/root/bot/cli.sh'
 $ pm2 save
