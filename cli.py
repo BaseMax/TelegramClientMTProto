@@ -39,7 +39,7 @@ async def how(event):
 		await event.reply(random.choice(list_how))
 
 list_bye=[
-	"I hope you have a good dream, Bye.",
+	"I hope you have a good dream in sleep, Bye.",
 	"Good bye.",
 	"Bye!",
 ]
