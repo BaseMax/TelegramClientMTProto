@@ -21,29 +21,29 @@ async def test(event):
 	await event.reply('Hey!')
 
 list_hello=[
-	"سلام وقت بخیر,\nخسته نباشید.\nدر خدمتم.",
-	"سلام وقت بخیر,\nدر خدمتم..",
-	"سلام,\nدر خدمتم..",
+	"Hello,",
+	"Hi.",
+	"Hey,",
 ]
-@client.on(events.NewMessage(pattern='(?i)سلام|علیک'))
+@client.on(events.NewMessage(pattern='(?i)hi|hello'))
 async def hello(event):
 		await event.reply(random.choice(list_hello))
 
 list_how=[
-	"ممنون.\nسپاسگزارم.\nبه خوبی شما.",
-	"ممنون.\nبه خوبی شما.",
-	"به خوبی شما.",
+	"Me too, Thank you.",
+	"Thank you very much.",
+	"Thank you.",
 ]
-@client.on(events.NewMessage(pattern='(?i)خوبی'))
+@client.on(events.NewMessage(pattern='(?i)how are you|are you good'))
 async def how(event):
 		await event.reply(random.choice(list_how))
 
 list_bye=[
-	"بدرود, خداحافظ.\nموفق باشید.",
-	"خداحافظ.\nموفق باشید.",
-	"فعلا.",
+	"I hope you have a good dream, Bye.",
+	"Good bye.",
+	"Bye!",
 ]
-@client.on(events.NewMessage(pattern='(?i)خداحافظ|بای|شب بخیر'))
+@client.on(events.NewMessage(pattern='(?i)bye|good bye'))
 async def bye(event):
 		await event.reply(random.choice(list_bye))
 
